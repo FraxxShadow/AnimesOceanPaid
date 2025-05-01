@@ -21,8 +21,8 @@ FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "10"))
 BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/AnimesOceanSupport")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "200"))
 
-START_PIC = os.environ.get("START_PIC", "https://c4.wallpaperflare.com/wallpaper/365/666/518/hunter-x-hunter-vacuum-cleaner-glasses-pink-eyes-anime-hd-wallpaper-preview.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://w0.peakpx.com/wallpaper/259/624/HD-wallpaper-anime-hunter-x-hunter-chrollo-lucilfer.jpg")
+START_PIC = os.environ.get("START_PIC", "https://ibb.co/1DKwcsC")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://ibb.co/NnZrBrNJ")
 
 HELP_TXT = "<b><blockquote>ᴛʜɪs ɪs ᴀɴ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡᴏʀᴋ ғᴏʀ @AnimesOcean\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/AnimeMonth>卂几丨爪乇</a></blockquote></b>"
 ABOUT_TXT = "<b><blockquote>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/AnimeMonth>卂几丨爪乇</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/AnimesOcean>𝘼𝙣𝙞𝙢𝙚𝙨𝙊𝙘𝙚𝙖𝙣</a>\n◈ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/AnimesOcean>𝘼𝙣𝙞𝙢𝙚𝙨𝙊𝙘𝙚𝙖𝙣</a>\n◈ AɴɪᴍᴇsOᴄᴇᴀɴ Sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/animesoceansupport>𝘼𝙣𝙞𝙢𝙚𝙨𝙊𝙘𝙚𝙖𝙣 𝙎𝙪𝙥𝙥𝙤𝙧𝙩</a>\n◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/cosmic_freak>subaru</a></blockquote></b>"
