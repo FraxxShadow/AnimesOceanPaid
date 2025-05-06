@@ -21,8 +21,8 @@ FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "10"))
 BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/HexaAnimeChat")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "200"))
 
-START_PIC = os.environ.get("START_PIC", "https://ibb.co/1DKwcsC")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://ibb.co/NnZrBrNJ")
+START_PIC = os.environ.get("START_PIC", "https://ibb.co/gMZncYSS")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://ibb.co/Sw4b8x5W")
 
 HELP_TXT = "<b><blockquote>ᴛʜɪs ɪs ᴀɴ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡᴏʀᴋ ғᴏʀ @HexaAnime\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/AnimeMonth>卂几丨爪乇</a></blockquote></b>"
 ABOUT_TXT = "<b><blockquote>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/AnimeMonth>卂几丨爪乇</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/hexaanime>𝖧𝖾𝗑𝖺𝖠𝗇𝗂𝗆𝖾</a>\n◈ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/HexaAnime>𝖧𝖾𝗑𝖺 𝖠𝗇𝗂𝗆𝖾</a>\n◈ Aɴɪᴍᴇ Sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/hexaanimechat>𝖧𝖾𝗑𝖺 𝖠𝗇𝗂𝗆𝖾 𝖲𝗎𝗉𝗉𝗈𝗋𝗍</a></blockquote></b>"
