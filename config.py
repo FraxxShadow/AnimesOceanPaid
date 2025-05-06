@@ -8,7 +8,7 @@ TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7758844213:AAEOclW3R03VlsMBW_s2Ry
 APP_ID = int(os.environ.get("APP_ID", "28744454"))
 API_HASH = os.environ.get("API_HASH", "debd37cef0ad1a1ce45d0be8e8c3c5e7")
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002415067779"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002397268658"))
 OWNER = os.environ.get("OWNER", "DARKXSIDE78")
 OWNER_ID = int(os.environ.get("OWNER_ID", "7096258348"))
 
