@@ -57,11 +57,11 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 [InlineKeyboardButton("‹ ʙᴀᴄᴋ", callback_data="fsub_back")]
             ]
             await query.message.edit_text(
-                f"Channel: {chat.title}\nCurrent Force-Sub Mode: {status}",
+                f"<b>Cʜᴀɴɴᴇʟ﹕ {chat.title}\nCᴜʀʀᴇɴᴛ Fᴏʀᴄᴇ⁻-Sᴜʙ Mᴏᴅᴇ﹕ {status}</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
         except Exception:
-            await query.answer("Failed to fetch channel info", show_alert=True)
+            await query.answer("Fᴀɪʟᴇᴅ ᴛᴏ ꜰᴇᴛᴄʜ ᴄʜᴀɴɴᴇʟ ɪɴꜰᴏ", show_alert=True)
 
     elif data.startswith("rfs_toggle_"):
         cid, action = data.split("_")[2:]
@@ -69,17 +69,17 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         mode = "on" if action == "on" else "off"
 
         await db.set_channel_mode(cid, mode)
-        await query.answer(f"Force-Sub set to {'ON' if mode == 'on' else 'OFF'}")
+        await query.answer(f"Fᴏʀᴄᴇ-Sᴜʙ sᴇᴛ ᴛᴏ {'ᴏɴ' if mode == 'on' else 'ᴏғғ'}")
 
         chat = await client.get_chat(cid)
         status = "ᴏɴ" if mode == "on" else "ᴏғғ"
-        new_mode = "ᴏғғ" if mode == "on" else "on"
+        new_mode = "ᴏғғ" if mode == "on" else "ᴏɴ"
         buttons = [
             [InlineKeyboardButton(f"ʀᴇǫ ᴍᴏᴅᴇ {'ᴏғғ' if mode == 'on' else 'ᴏɴ'}", callback_data=f"rfs_toggle_{cid}_{new_mode}")],
             [InlineKeyboardButton("‹ ʙᴀᴄᴋ", callback_data="fsub_back")]
         ]
         await query.message.edit_text(
-            f"Channel: {chat.title}\nCurrent Force-Sub Mode: {status}",
+            f"<b>Cʜᴀɴɴᴇʟ﹕ {chat.title}\nCᴜʀʀᴇɴᴛ Fᴏʀᴄᴇ-Sᴜʙ Mᴏᴅᴇ﹕ {status}</b>",
             reply_markup=InlineKeyboardMarkup(buttons)
         )
 
@@ -90,7 +90,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             try:
                 chat = await client.get_chat(cid)
                 mode = await db.get_channel_mode(cid)
-                status = "ᴏɴ" if mode == "on" else "ᴏғғ"
+                status = "✘" if mode == "on" else "✘"
                 buttons.append([InlineKeyboardButton(f"{status} {chat.title}", callback_data=f"rfs_ch_{cid}")])
             except:
                 continue
