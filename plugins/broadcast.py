@@ -1,15 +1,3 @@
-# Don't Remove Credit @CodeFlix_Bots, @rohit_1888
-# Ask Doubt on telegram @CodeflixSupport
-#
-# Copyright (C) 2025 by Codeflix-Bots@Github, < https://github.com/Codeflix-Bots >.
-#
-# This file is part of < https://github.com/Codeflix-Bots/FileStore > project,
-# and is released under the MIT License.
-# Please see < https://github.com/Codeflix-Bots/FileStore/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 import asyncio
 import os
 import random
@@ -29,7 +17,7 @@ from database.database import *
 
 #=====================================================================================##
 
-REPLY_ERROR = "<code>Use this command as a reply to any telegram message without any spaces.</code>"
+REPLY_ERROR = "<code>Usᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇssᴀɢᴇ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ sᴘᴀᴄᴇs.</code>"
 
 #=====================================================================================##
 
@@ -70,16 +58,16 @@ async def send_pin_text(client: Bot, message: Message):
 
         status = f"""<b><u>ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ</u></b>
 
-Total Users: <code>{total}</code>
-Successful: <code>{successful}</code>
-Blocked Users: <code>{blocked}</code>
-Deleted Accounts: <code>{deleted}</code>
-Unsuccessful: <code>{unsuccessful}</code>"""
+Tᴏᴛᴀʟ Usᴇʀs﹕ <code>{total}</code>
+Sᴜᴄᴄᴇssꜰᴜʟ﹕ <code>{successful}</code>
+Bʟᴏᴄᴋᴇᴅ Usᴇʀs﹕ <code>{blocked}</code>
+Dᴇʟᴇᴛᴇᴅ Aᴄᴄᴏᴜɴᴛs﹕ <code>{deleted}</code>
+Uɴsᴜᴄᴄᴇssꜰᴜʟ﹕ <code>{unsuccessful}</code>"""
 
         return await pls_wait.edit(status)
 
     else:
-        msg = await message.reply("Reply to a message to broadcast and pin it.")
+        msg = await message.reply("Rᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀɴᴅ ᴘɪɴ ɪᴛ.")
         await asyncio.sleep(8)
         await msg.delete()
 
@@ -119,11 +107,11 @@ async def send_text(client: Bot, message: Message):
 
         status = f"""<b><u>ʙʀᴏᴀᴅᴄᴀꜱᴛ...</u>
 
-Total Users: <code>{total}</code>
-Successful: <code>{successful}</code>
-Blocked Users: <code>{blocked}</code>
-Deleted Accounts: <code>{deleted}</code>
-Unsuccessful: <code>{unsuccessful}</code></b>"""
+Tᴏᴛᴀʟ Usᴇʀs﹕ <code>{total}</code>
+Sᴜᴄᴄᴇssꜰᴜʟ﹕ <code>{successful}</code>
+Bʟᴏᴄᴋᴇᴅ Usᴇʀs﹕ <code>{blocked}</code>
+Dᴇʟᴇᴛᴇᴅ Aᴄᴄᴏᴜɴᴛs﹕ <code>{deleted}</code>
+Uɴsᴜᴄᴄᴇssꜰᴜʟ﹕ <code>{unsuccessful}</code></b>"""
 
         return await pls_wait.edit(status)
 
@@ -132,26 +120,11 @@ Unsuccessful: <code>{unsuccessful}</code></b>"""
         await asyncio.sleep(8)
         await msg.delete()
 
-#=====================================================================================##
-# Don't Remove Credit @CodeFlix_Bots, @rohit_1888
-# Ask Doubt on telegram @CodeflixSupport
-#
-# Copyright (C) 2025 by Codeflix-Bots@Github, < https://github.com/Codeflix-Bots >.
-#
-# This file is part of < https://github.com/Codeflix-Bots/FileStore > project,
-# and is released under the MIT License.
-# Please see < https://github.com/Codeflix-Bots/FileStore/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
-# broadcast with auto-del
-
 @Bot.on_message(filters.private & filters.command('dbroadcast') & admin)
 async def delete_broadcast(client: Bot, message: Message):
     if message.reply_to_message:
         try:
-            duration = int(message.command[1])  # Get the duration in seconds
+            duration = int(message.command[1])
         except (IndexError, ValueError):
             await message.reply("<b>Pʟᴇᴀsᴇ ᴜsᴇ ᴀ ᴠᴀʟɪᴅ ᴅᴜʀᴀᴛɪᴏɴ ɪɴ sᴇᴄᴏɴᴅs.</b> Usᴀɢᴇ: /dbroadcast {duration}")
             return
@@ -164,7 +137,7 @@ async def delete_broadcast(client: Bot, message: Message):
         deleted = 0
         unsuccessful = 0
 
-        pls_wait = await message.reply("<i>Broadcast with auto-delete processing....</i>")
+        pls_wait = await message.reply("<i>Bʀᴏᴀᴅᴄᴀsᴛ ᴡɪᴛʜ ᴀᴜᴛᴏ⁻ᴅᴇʟᴇᴛᴇ ᴘʀᴏᴄᴇssɪɴɢ....</i>")
         for chat_id in query:
             try:
                 sent_msg = await broadcast_msg.copy(chat_id)
@@ -190,11 +163,11 @@ async def delete_broadcast(client: Bot, message: Message):
 
         status = f"""<b><u>Bʀᴏᴀᴅᴄᴀsᴛɪɴɢ ᴡɪᴛʜ Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ...</u>
 
-Total Users: <code>{total}</code>
-Successful: <code>{successful}</code>
-Blocked Users: <code>{blocked}</code>
-Deleted Accounts: <code>{deleted}</code>
-Unsuccessful: <code>{unsuccessful}</code></b>"""
+Tᴏᴛᴀʟ Usᴇʀs﹕ <code>{total}</code>
+Sᴜᴄᴄᴇssꜰᴜʟ: <code>{successful}</code>
+Bʟᴏᴄᴋᴇᴅ Usᴇʀs﹕ <code>{blocked}</code>
+Dᴇʟᴇᴛᴇᴅ Aᴄᴄᴏᴜɴᴛs﹕ <code>{deleted}</code>
+Uɴsᴜᴄᴄᴇssꜰᴜʟ﹕  <code>{unsuccessful}</code></b>"""
 
         return await pls_wait.edit(status)
 
@@ -202,16 +175,3 @@ Unsuccessful: <code>{unsuccessful}</code></b>"""
         msg = await message.reply("Pʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ɪᴛ ᴡɪᴛʜ Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ.")
         await asyncio.sleep(8)
         await msg.delete()
-
-
-# Don't Remove Credit @CodeFlix_Bots, @rohit_1888
-# Ask Doubt on telegram @CodeflixSupport
-#
-# Copyright (C) 2025 by Codeflix-Bots@Github, < https://github.com/Codeflix-Bots >.
-#
-# This file is part of < https://github.com/Codeflix-Bots/FileStore > project,
-# and is released under the MIT License.
-# Please see < https://github.com/Codeflix-Bots/FileStore/blob/master/LICENSE >
-#
-# All rights reserved.
-#
