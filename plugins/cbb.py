@@ -59,10 +59,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         try:
             chat = await client.get_chat(cid)
             mode = await db.get_channel_mode(cid)
-            status = "🟢 ᴏɴ" if mode == "on" else "🔴 ᴏғғ"
+            status = "ᴏɴ" if mode == "on" else "ᴏғғ"
             new_mode = "ᴏғғ" if mode == "on" else "on"
             buttons = [
-                [InlineKeyboardButton(f"ʀᴇǫ ᴍᴏᴅᴇ {'OFF' if mode == 'on' else 'ON'}", callback_data=f"rfs_toggle_{cid}_{new_mode}")],
+                [InlineKeyboardButton(f"ʀᴇǫ ᴍᴏᴅᴇ {'ᴏғғ' if mode == 'on' else 'ᴏɴ'}", callback_data=f"rfs_toggle_{cid}_{new_mode}")],
                 [InlineKeyboardButton("‹ ʙᴀᴄᴋ", callback_data="fsub_back")]
             ]
             await query.message.edit_text(
@@ -80,12 +80,11 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await db.set_channel_mode(cid, mode)
         await query.answer(f"Force-Sub set to {'ON' if mode == 'on' else 'OFF'}")
 
-        # Refresh the same channel's mode view
         chat = await client.get_chat(cid)
-        status = "🟢 ON" if mode == "on" else "🔴 OFF"
-        new_mode = "off" if mode == "on" else "on"
+        status = "ᴏɴ" if mode == "on" else "ᴏғғ"
+        new_mode = "ᴏғғ" if mode == "on" else "on"
         buttons = [
-            [InlineKeyboardButton(f"ʀᴇǫ ᴍᴏᴅᴇ {'OFF' if mode == 'on' else 'ON'}", callback_data=f"rfs_toggle_{cid}_{new_mode}")],
+            [InlineKeyboardButton(f"ʀᴇǫ ᴍᴏᴅᴇ {'ᴏғғ' if mode == 'on' else 'ᴏɴ'}", callback_data=f"rfs_toggle_{cid}_{new_mode}")],
             [InlineKeyboardButton("‹ ʙᴀᴄᴋ", callback_data="fsub_back")]
         ]
         await query.message.edit_text(
@@ -100,7 +99,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             try:
                 chat = await client.get_chat(cid)
                 mode = await db.get_channel_mode(cid)
-                status = "🟢" if mode == "on" else "🔴"
+                status = "ᴏɴ" if mode == "on" else "ᴏғғ"
                 buttons.append([InlineKeyboardButton(f"{status} {chat.title}", callback_data=f"rfs_ch_{cid}")])
             except:
                 continue
