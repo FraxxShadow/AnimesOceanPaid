@@ -6,9 +6,9 @@ from logging.handlers import RotatingFileHandler
 
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7758844213:AAG2uqRcMxMpJclMlSY5r7M7J7CuvTTipAU")
 APP_ID = int(os.environ.get("APP_ID", "28744454"))
-API_HASH = os.environ.get("API_HASH", "debd37cef0ad1a1ce45d0be8e8c3c5e7")
+API_HASH = os.environ.get("API_HASH", "73d424d9847f968130cd5b41946f7a5d")
 
-CHANNEL_ID = os.environ.get("CHANNEL_ID", "@BatchBotLog")
+CHANNEL_ID = os.environ.get("CHANNEL_ID", "-1002275439435")
 OWNER = os.environ.get("OWNER", "DARKXSIDE78")
 OWNER_ID = int(os.environ.get("OWNER_ID", "7086472788"))
 
