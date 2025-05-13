@@ -23,7 +23,7 @@ async def start_command(client: Client, message: Message):
     banned_users = await db.get_ban_users()
     if user_id in banned_users:
         return await message.reply_text(
-            "<b>⛔️ You are Bᴀɴɴᴇᴅ from using this bot.</b>\n\n"
+            "<b>⛔You are Bᴀɴɴᴇᴅ from using this bot.</b>\n\n"
             "<b><i>Cᴏɴᴛᴀᴄᴛ sᴜᴘᴘᴏʀᴛ ɪғ ʏᴏᴜ ᴛʜɪɴᴋ ᴛʜɪs ɪs ᴀ ᴍɪsᴛᴀᴋᴇ.</i></b>",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Sᴜᴘᴘᴏʀᴛ", url=BAN_SUPPORT)]]
