@@ -8,24 +8,24 @@ TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7758844213:AAG2uqRcMxMpJclMlSY5r7
 APP_ID = int(os.environ.get("APP_ID", "28744454"))
 API_HASH = os.environ.get("API_HASH", "debd37cef0ad1a1ce45d0be8e8c3c5e7")
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002397268658"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002275439435"))
 OWNER = os.environ.get("OWNER", "DARKXSIDE78")
 OWNER_ID = int(os.environ.get("OWNER_ID", "7086472788"))
 
 PORT = os.environ.get("PORT", "8000")
 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nitinkumardhundhara:DARKXSIDE78@cluster0.wdive.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "HexaAnime")
+DB_NAME = os.environ.get("DATABASE_NAME", "unknown")
 
 FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "10"))
-BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/HexaAnimeChat")
+BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/GenAnimeOfcChat")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "200"))
 
-START_PIC = os.environ.get("START_PIC", "https://ibb.co/gMZncYSS")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://ibb.co/Sw4b8x5W")
+START_PIC = os.environ.get("START_PIC", "https://livewallp.com/wp-content/uploads/2021/07/Madarareal-life.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://moewalls.com/wp-content/uploads/2023/11/madara-uchiha-reincarnation-thumb.jpg")
 
-HELP_TXT = "<b><blockquote>ᴛʜɪs ɪs ᴀɴ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡᴏʀᴋ ғᴏʀ @HexaAnime\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/AnimeMonth>卂几丨爪乇</a></blockquote></b>"
-ABOUT_TXT = "<b><blockquote>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/AnimeMonth>卂几丨爪乇</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/hexaanime>𝖧𝖾𝗑𝖺𝖠𝗇𝗂𝗆𝖾</a>\n◈ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/HexaAnime>𝖧𝖾𝗑𝖺 𝖠𝗇𝗂𝗆𝖾</a>\n◈ Aɴɪᴍᴇ Sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/hexaanimechat>𝖧𝖾𝗑𝖺 𝖠𝗇𝗂𝗆𝖾 𝖲𝗎𝗉𝗉𝗈𝗋𝗍</a></blockquote></b>"
+HELP_TXT = "<b><blockquote>ᴛʜɪs ɪs ᴀɴ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡᴏʀᴋ ғᴏʀ <a href=https://t.me/GenAnimeOfc>GᴇɴAɴɪᴍᴇ</a>\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/DARKXSIDE78>Dᴀʀᴋxsɪᴅᴇ</a></blockquote></b>"
+ABOUT_TXT = "<b><blockquote>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/DARKXSIDE78>Dᴀʀᴋxsɪᴅᴇ</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/GenAnimeOfc>GᴇɴAɴɪᴍᴇ</a>\n◈ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/HexaAnime>𝖧𝖾𝗑𝖺 𝖠𝗇𝗂𝗆𝖾</a>\n◈ Aɴɪᴍᴇ Sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/genanimeofcchat>Gᴇɴ Aɴɪᴍᴇ Cʜᴀᴛ</a></blockquote></b>"
 #--------------------------------------------
 #--------------------------------------------
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ {first}\n\n<blockquote> ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</blockquote></b>")
@@ -49,7 +49,7 @@ CMD_TXT = """<blockquote><b>» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:</b></blockqu
 <b>›› /admins :</b> ɢᴇᴛ ʟɪsᴛ ᴏꜰ ᴀᴅᴍɪɴs
 """
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", True) == 'True'
 
