@@ -4,28 +4,28 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7758844213:AAH4L-tCbdc2VaKVUgQY24v0CwRn7ziYimw")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7890742524:AAEmHhaAopnTPkS3_mP6MfVTdvbEavpVoD8")
 APP_ID = int(os.environ.get("APP_ID", "28744454"))
 API_HASH = os.environ.get("API_HASH", "debd37cef0ad1a1ce45d0be8e8c3c5e7")
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002397268658"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002234099061"))
 OWNER = os.environ.get("OWNER", "DARKXSIDE78")
 OWNER_ID = int(os.environ.get("OWNER_ID", "7086472788"))
 
 PORT = os.environ.get("PORT", "8000")
 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nitinkumardhundhara:DARKXSIDE78@cluster0.wdive.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "HexaAnime")
+DB_NAME = os.environ.get("DATABASE_NAME", "RawAnimeBot")
 
 FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "10"))
-BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/HexaAnimeChat")
+BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/AnimeMonth")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "200"))
 
-START_PIC = os.environ.get("START_PIC", "https://ibb.co/gMZncYSS")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://ibb.co/Sw4b8x5W")
+START_PIC = os.environ.get("START_PIC", "https://img.goodfon.com/wallpaper/big/a/43/badfon-dragon-ball-anime-best-895.webp")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://img.goodfon.com/wallpaper/big/a/43/badfon-dragon-ball-anime-best-895.webp")
 
-HELP_TXT = "<b><blockquote>ᴛʜɪs ɪs ᴀɴ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡᴏʀᴋ ғᴏʀ @HexaAnime\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/AnimeMonth>卂几丨爪乇</a></blockquote></b>"
-ABOUT_TXT = "<b><blockquote>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/AnimeMonth>卂几丨爪乇</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/hexaanime>𝖧𝖾𝗑𝖺𝖠𝗇𝗂𝗆𝖾</a>\n◈ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/HexaAnime>𝖧𝖾𝗑𝖺 𝖠𝗇𝗂𝗆𝖾</a>\n◈ Aɴɪᴍᴇ Sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/hexaanimechat>𝖧𝖾𝗑𝖺 𝖠𝗇𝗂𝗆𝖾 𝖲𝗎𝗉𝗉𝗈𝗋𝗍</a></blockquote></b>"
+HELP_TXT = "<b><blockquote>ᴛʜɪs ɪs ᴀɴ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡᴏʀᴋ ғᴏʀ @RawAnimes\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/AnimeMonth>卂几丨爪乇</a></blockquote></b>"
+ABOUT_TXT = "<b><blockquote>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/AnimeMonth>卂几丨爪乇</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/RawAnimes>𝗥𝗮𝘄𝗔𝗻𝗶𝗺𝗲𝘀</a>\n◈ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/RawAnimes>𝗥𝗮𝘄𝗔𝗻𝗶𝗺𝗲𝘀</a>\n◈ Aɴɪᴍᴇ Sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/AnimeMonth>卂几丨爪乇</a></blockquote></b>"
 #--------------------------------------------
 #--------------------------------------------
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ {first}\n\n<blockquote> ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</blockquote></b>")
